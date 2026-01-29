@@ -361,58 +361,6 @@ nav a {
     height: 50px;
     transition: transform 0.3s;
 }
-/* RESPONSIVE BREAKPOINTS */
-
-/* Tablet */
-@media (min-width: 600px) {
-    .banner h1 { 
-        font-size: 2rem; 
-    }
-
-    .banner p { 
-        font-size: 1rem; 
-    }
-
-    .search-form input,
-    .search-form button { 
-        padding: 14px; 
-    }
-
-    .job-cards { 
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-    .main-container { 
-        flex-direction: row; 
-    }
-
-    .sidebar { 
-        width: 260px; 
-        order: 1; 
-    }
-
-    .latest-jobs { 
-        order: 2; 
-    }
-
-    .app-buttons { 
-        flex-direction: row; 
-    }
-
-    .app-content { 
-        flex-direction: row; 
-        justify-content: space-between; 
-        text-align: left; 
-    }
-
-    .app-text { 
-        max-width: 50%; 
-    }
-
-    .app-image { 
-        max-width: 45%; 
-    }
-}
 
 /* Desktop */
 @media (min-width: 900px) {
@@ -490,3 +438,4 @@ footer {
     background: #fff;
     color: #666;
 }
+
