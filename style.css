@@ -438,4 +438,52 @@ footer {
     background: #fff;
     color: #666;
 }
+header {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blurs content behind the header */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 40px;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+    border-bottom: 2px solid var(--accent-blue);
+}
+
+.job-card {
+    border: 1px solid #e1e4e8;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.job-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(106, 27, 154, 0.15); /* Purple-tinted shadow */
+    border-color: #6a1b9a;
+}
+
+.apply {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.apply:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0056b3;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+.apply:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 
