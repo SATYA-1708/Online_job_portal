@@ -1,0 +1,84 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 { font-size: 1.5rem; text-align: center; color: #333; }
+
+.input-container {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#addBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    flex: 1;
+    margin: 0 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+ul { list-style: none; padding: 0; }
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Priority Colors */
+.priority-High { border-left: 5px solid #ff4d4d; }
+.priority-Medium { border-left: 5px solid #ffa500; }
+.priority-Low { border-left: 5px solid #2ecc71; }
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
+
+.delete-btn {
+    background: #ffeded;
+    color: #ff4d4d;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
