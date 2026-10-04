@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /inbox
+Disallow: /profile
+Disallow: /my-projects
+
+Sitemap: https://techsparkx.in/sitemap.xml
