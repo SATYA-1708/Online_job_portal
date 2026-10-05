@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    @apply antialiased text-gray-300 bg-gray-950;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-emerald-500 text-gray-950 px-6 py-2.5 rounded-lg font-bold transition-all duration-200 hover:bg-emerald-400 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center bg-gray-800 text-gray-200 border border-gray-700 px-6 py-2.5 rounded-lg font-semibold transition-all duration-200 hover:bg-gray-700 hover:text-white hover:border-gray-600 active:scale-95;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center bg-red-500/10 text-red-400 border border-red-500/20 px-6 py-2.5 rounded-lg font-semibold transition-all duration-200 hover:bg-red-500/20 active:scale-95;
+  }
+
+  .card {
+    @apply bg-gray-900 rounded-xl border border-gray-800 p-6 transition-all duration-300;
+  }
+
+  .card:hover {
+    border-color: rgba(52, 211, 153, 0.3);
+    box-shadow: 0 0 30px -5px rgba(52, 211, 153, 0.08);
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .bg-dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .glow-emerald {
+    box-shadow: 0 0 40px -10px rgba(52, 211, 153, 0.3);
+  }
+
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-400;
+  }
+}
+
+/* ══ Keyframe Animations ══ */
+@keyframes float {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+
+  100% {
+    transform: translateY(-20px) scale(1.2);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes wordReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) rotateX(20deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
