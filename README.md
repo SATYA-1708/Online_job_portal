@@ -7,7 +7,7 @@ A public React and Express codebase for a hiring/freelance marketplace. The clie
 ## Architecture and layout
 
 - `client/src/` — React pages, components, and API client.
-- `server/` — Express routes, controllers, middleware, models, and local data.
+- `server/` — Express routes, controllers, middleware, Mongoose models, and tracked local data files. The active `server/models/db.js` connects to MongoDB using `MONGO_URI`; the JSON `.db` files are separate tracked data snapshots, not the active Mongoose persistence adapter.
 - `server/.env.example` — names of server configuration variables.
 - `update_*` — retained alternate working copies whose purpose is not documented.
 
